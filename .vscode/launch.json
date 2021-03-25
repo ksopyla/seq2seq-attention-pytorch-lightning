@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Pytorch Lightining - spelling",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--N_samples",
+                "1000",
+                "--N_valid_size",
+                "100",
+                "--batch_size", "2"
+                "--emb_dim", "16",
+                "--hidden_dim","32",
+                "--gpus",
+                "1",
+                "--max_epoch",
+                "2",
+                "--log_gpu_memory", "True",
+                "--weights_summary", "full",
+                "--dataset_path",
+                "./data/10k_sent_typos_wikipedia.jsonl",
+            ]
+        }
+    ]
+}
