@@ -42,4 +42,12 @@ tensorboard dev --logdir model_corrector/pl_tensorboard_logs/version??
 
 There are two data modules: 
 
-* [ABCSec2SeqDataModule](text_loaders.py)
+* [ABCSec2SeqDataModule](text_loaders.py#L30) - generates artificial data
+* [SeqPairJsonDataModule](text_loaders.py#L247) - read data from json line file
+
+you should uncomment which one you want to use [seq2seq_trainer.py](seq2seq_trainer.py#L391).
+
+### Tokenizers (token encoders)
+
+Project use two tokenizers (token encoders) [CharTokenizerEncoder](text_loaders.py#L497) [BiGramTokenizerEncoder](text_loaders.py#L552) in each data module you can change it (find in code and uncomment or plug in yours).
+
