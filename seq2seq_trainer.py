@@ -435,7 +435,7 @@ if __name__ == "__main__":
 
 # sample cmd
 
-# python char_enc_dec.py --dataset_path /data/typos.jsonl \
+# python seq2seq_trainer.py --dataset_path /data/10k_sent_typos_wikipedia.jsonl \
 # --gpus=2 --max_epoch=5 --batch_size=16 --num_workers=4 \
 # --emb_dim=128 --hidden_dim=512 \
 # --log_gpu_memory=True --weights_summary=full \
